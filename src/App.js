@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { Home } from './home/home';
 import AllRoutes from './home/routes';
+import { MailtrapPage } from './mailtrap/mailtrap';
+import { Allmailtraprout } from './mailtrap/mailrout';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         </a>
       </header> */}
        {/* <Home/> */}
+       {/* <MailtrapPage/> */}
+       {/* <Allmailtraprout/> */}
        <AllRoutes/>
     </div>
   );

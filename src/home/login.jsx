@@ -31,7 +31,7 @@ function Login() {
   .then((res)=>{
     if(res.token){
       loginUser(res.token)
-      navigate("/dashboard")
+      navigate("/mailtrap")
     }
   })
     .catch(err=>console.log(err))
@@ -70,19 +70,16 @@ function Login() {
   </Button>
   <Button  size='md' height='48px'  width='250px'border='2px' colorScheme='twitter' leftIcon={''}>
     Twitter</Button>
-     <Button onClick={()=>chanceinput()} size='lg' height='48px' width='250px' border='2px' leftIcon={<EmailIcon/>} colorScheme='gray' variant='solid'>Email</Button>
+     <Button onClick={()=>chanceinput()} size='lg' height='48px' width='250px' border='2px' leftIcon={<EmailIcon/>} colorScheme='gray' variant='solid'>Sing Up With Your Email</Button>
 </VStack>
                 </Box>
 {/* -------------------- */}
       {
         openinput?<Box  paddingTop={'80px'}>
       <form   className="form" onSubmit={submitData}>
-        <div  >
-          
-        
+        <div >
           <Text>Email</Text>
         <Input w={'30%'} size='md' value={email} onChange={e=>setEmail(e.target.value)} data-testid="email-input" type="email" placeholder="email" />
-          
         </div>
         <Box>
           <Text>Password</Text>
@@ -91,12 +88,10 @@ function Login() {
             value={password} onChange={e=>setPassword(e.target.value)}
               data-testid="password-input"
               type="password"
-              placeholder="password"
-            />
-        
+              placeholder="password" />
         </Box>
         <div>
-          <Input  w={'30%'} size='md' disabled={da} type='submit'/>
+        <Button size='lg' colorScheme='whatsapp' w={'30%'} disabled={da} type='submit'>Sing Up</Button>
         </div>
       </form>
       <div>

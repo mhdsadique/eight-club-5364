@@ -1,8 +1,7 @@
 
-import { AspectRatio, Box, Button, Center, Container, Flex, Heading, HStack, Image, Menu, MenuButton,
+import { Box, Button, Center, Container, Flex, Heading, HStack, Image, Menu, MenuButton,
      MenuItem, MenuList,Spacer,Stack,Text, Feature, SimpleGrid} from '@chakra-ui/react'
      import {ChevronDownIcon} from '@chakra-ui/icons'
-     import VideoPlayer from 'react-video-js-player';
 import { Link, NavLink } from 'react-router-dom';
 
 export const Home=()=>{
@@ -63,7 +62,9 @@ export const Home=()=>{
                 <Heading as='h4' size='md'>Automate test flows and scenarios with flexible API</Heading>
                 <Heading as='h4' size='md'>Analyze email content for spam score and validate HTML/CSS</Heading>
                 <Spacer/>
+                <Link to={'/login'}>
                 <Button position={''} marginTop={'30px'} colorScheme='whatsapp'>Sign Up for Free</Button>
+                </Link>
                 <Spacer/>
                 </Stack>
                 <Spacer/>
@@ -129,7 +130,7 @@ export const Home=()=>{
   <Box margin={'auto'} w='80%'>
   <Heading marginTop={'100px'} size='lg'>  Setup takes less than 5 minutes</Heading>
   <Text>Mailtrap Sandbox is compatible with any app or framework that supports SMTP</Text>
-  <Box>
+  <Box textAlign={'start'}>
     <Flex>
     <Image src='https://mailtrap.io/wp-content/uploads/2021/03/setup-final-700x502.png'/>
     <SimpleGrid paddingTop={'100px'} columns={1} spacing={10} margin='auto' justifyContent='center' w={'70%'}>
@@ -143,7 +144,7 @@ export const Home=()=>{
   </Box>
   </Box>
   </Box>
-                {/* ----------------- */}
+                {/* ------------------ */}
                 <Box marginTop={'100px'} >
 
     <Heading size='lg'>How different teams use Email Sandbox</Heading>
@@ -151,19 +152,22 @@ export const Home=()=>{
         <Image src='https://mailtrap.io/wp-content/uploads/2021/03/img_team.svg' />
                   </Center>
                 </Box>
-{/* ---------------------- */}
+        {/* ---------------------- */}
                 <Box  marginTop={'100px'}  h={'300px'}  w={'100%'} bgColor={'#1a2e44'}>
                   <Flex alignItems={'center'} justifyContent='center'>
                   <Box >
                     <Heading color={'white'}>Create Your Free AccountIn 3 Clicks</Heading>
+                    <Link to={'/login'}>
+
                     <Button position={''} size='lg' colorScheme='whatsapp'>Sign Up Now</Button>
+                    </Link>
                   </Box>
                   {/* <Box> */}
                     <Image w={'300px'}  src='https://mailtrap.io/wp-content/uploads/2021/01/img__cta.svg' />
                   {/* </Box> */}
                   </Flex>
                 </Box>
-      {/* ------------- */}
+      {/* -------------------- --------*/}
                 <Container marginTop={'100px'}>
                   <Flex gap={10}>
                   <Box boxSize='lg'>
