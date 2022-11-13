@@ -3,7 +3,7 @@ import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPane
 import React from "react"
 import { Link } from "react-router-dom"
 import { Sidebar } from "./sidebarpage"
-import { Allmailtraprout } from "./mailrout"
+
 
 export const MailtrapPage=()=>{
     return(

@@ -1,7 +1,7 @@
 
 
-import { Box, Button, Flex, Heading, HStack, SimpleGrid, Text } from "@chakra-ui/react"
-import { Link, Navigate, NavLink, useNavigate } from "react-router-dom"
+import { Box, Button, Flex, SimpleGrid, Text } from "@chakra-ui/react"
+import { Link, useNavigate } from "react-router-dom"
 import { Planboxex } from "./plansbox"
 import { Sidebar } from "./sidebarpage"
 
@@ -10,7 +10,7 @@ import { Sidebar } from "./sidebarpage"
 export const Billing=()=>{
     const navling=useNavigate()
     const viewplan=()=>{
-        // alert("done")
+   
         navling("/payment")
     }
     return (

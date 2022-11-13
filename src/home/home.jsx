@@ -1,6 +1,6 @@
 
 import { Box, Button, Center, Container, Flex, Heading, HStack, Image, Menu, MenuButton,
-     MenuItem, MenuList,Spacer,Stack,Text, Feature, SimpleGrid} from '@chakra-ui/react'
+     MenuItem, MenuList,Spacer,Stack,Text,SimpleGrid} from '@chakra-ui/react'
      import {ChevronDownIcon} from '@chakra-ui/icons'
 import { Link, NavLink } from 'react-router-dom';
 
@@ -57,7 +57,6 @@ export const Home=()=>{
         </Box>
             <Stack paddingTop={'130px'} spacing={'30px'} direction='column' align='center'>
             <Heading as='h2' size='xl'   >Email Sandbox Service</Heading>
-                {/* <Text fontSize='xl'>Email Sandbox Service</Text> */}
                 <Heading as='h4' size='md'>Capture SMTP traffic from staging and dev environments</Heading>
                 <Heading as='h4' size='md'>Automate test flows and scenarios with flexible API</Heading>
                 <Heading as='h4' size='md'>Analyze email content for spam score and validate HTML/CSS</Heading>
@@ -79,15 +78,7 @@ export const Home=()=>{
                 </HStack>
                 </Center>
                 <Spacer/>
-                  
-                {/* <div>
-                <VideoPlayer
-                    // controls={true}
-                    src={"https://youtu.be/g5o0ixCi4tg"}
-                    poster={'https://mailtrap.io/wp-content/uploads/2021/05/img__homepage-1024x610.png'}
-                    width="720"
-                    height="420"/>
-                  </div>         */}
+          
                     
                   <Center>
                   <Box marginTop={'100px'} w={'50%'} h='400px'>
@@ -100,33 +91,73 @@ export const Home=()=>{
      <Center>
     <Heading size='2xl' marginTop={'100px'} w={'35%'}>Email testing challenges that Mailtrap Sandbox solves</Heading>
      </Center>
-     
+     {/* ----------------------------- */}
      <SimpleGrid paddingTop={'100px'} columns={2} spacing={10} margin='auto' justifyContent='center' w={'70%'}>
   <Box>
+    <Flex>
+    <Box>
+      <Image src="https://mailtrap.io/wp-content/uploads/2021/03/icon4.svg"></Image>
+    </Box>
+    <Box textAlign={'start'} marginLeft="10px">
     <Heading size='md'>Configure your testing environment in 5 minutes</Heading>
     <Text>Each account comes with an individual testing environment. Integrate it with your app in just a few clicks.</Text>
-  </Box>
+    </Box></Flex></Box>
+
   <Box>
-  <Heading size='md'>Keep all testing data organized in one place</Heading>
+    <Flex>
+    <Box>
+      <Image src="https://mailtrap.io/wp-content/uploads/2021/03/icon__mail.svg"></Image>
+    </Box>
+    <Box textAlign={'start'} marginLeft="10px">
+    <Heading size='md'>Keep all testing data organized in one place</Heading>
     <Text>Create individual inboxes for different environments or review servers and group them into relevant projects.</Text>
-  </Box>
-  <Box  >
-  <Heading size='md'>Quickly integrate with Sandbox API</Heading>
-    <Text>Get started quickly with our well-documented API and configure automated testing with unlimited API calls.</Text>
-  </Box>
-  <Box  >
+    </Box></Flex></Box>
+
+  <Box>
+    <Flex>
+    <Box>
+      <Image src="https://mailtrap.io/wp-content/uploads/2021/01/icon_work.svg"></Image>
+    </Box>
+    <Box textAlign={'start'} marginLeft="10px">
+    <Heading size='md'>Quickly integrate with Sandbox API</Heading>
+    <Text>Create individual inboxes for different environments or review servers and group them into relevant projects.</Text>
+    </Box></Flex></Box>
+
+  
+  <Box>
+    <Flex>
+    <Box>
+      <Image src="https://mailtrap.io/wp-content/uploads/2021/03/icon2.svg"></Image>
+    </Box>
+    <Box textAlign={'start'} marginLeft="10px">
   <Heading size='md'>Dig into both the content and source of your emails</Heading>
     <Text>View messages, check spam scores, validate headers, analyze the HTML support across email clients, and more.</Text>
-  </Box>
-  <Box  >
-  <Heading size='md'>Easily share test emails with your team</Heading>
-    <Text>Manage access to your inboxes for colleagues or clients. Send selected test emails to whitelisted real recipients.</Text>
-  </Box>
-  <Box  >
+    </Box></Flex></Box>
+
+  
+  
+<Box>
+    <Flex>
+    <Box>
+      <Image src="https://mailtrap.io/wp-content/uploads/2021/01/icon_men.svg"></Image>
+    </Box>
+    <Box textAlign={'start'} marginLeft="10px">
+<Heading size='md'>Easily share test emails with your team</Heading>
+  <Text>Manage access to your inboxes for colleagues or clients. Send selected test emails to whitelisted real recipients.</Text>
+    </Box></Flex></Box>
+    
+<Box>
+    <Flex>
+    <Box>
+      <Image src="https://mailtrap.io/wp-content/uploads/2021/03/ivon__performance.svg"></Image>
+    </Box>
+    <Box textAlign={'start'} marginLeft="10px">
   <Heading size='md'>Test your email sending service</Heading>
     <Text>Send emails to Mailtrap Email Sandbox directly from your CRM or email sending service. Simulate sending to multiple recipients.</Text>
-  </Box>
+    </Box></Flex></Box>
+
   </SimpleGrid>
+  {/* --------------------------- */}
   <Box margin={'auto'} w='80%'>
   <Heading marginTop={'100px'} size='lg'>  Setup takes less than 5 minutes</Heading>
   <Text>Mailtrap Sandbox is compatible with any app or framework that supports SMTP</Text>
@@ -144,7 +175,7 @@ export const Home=()=>{
   </Box>
   </Box>
   </Box>
-                {/* ------------------ */}
+                {/* ------------------------------- */}
                 <Box marginTop={'100px'} >
 
     <Heading size='lg'>How different teams use Email Sandbox</Heading>
@@ -152,7 +183,44 @@ export const Home=()=>{
         <Image src='https://mailtrap.io/wp-content/uploads/2021/03/img_team.svg' />
                   </Center>
                 </Box>
-        {/* ---------------------- */}
+
+
+{/* -------------------------------- */}
+          
+              <Box boxShadow='dark-lg' p='6' rounded='md' bg='white' h={'400px'}marginTop={'100px'} bgColor={'cream'} justifyContent="center"display={'grid'} alignItems='center' >
+                <Heading >Trusted by 150,000+ monthly active users</Heading>
+                <Center>
+                <HStack spacing={8}  >
+                    <Image src='https://mailtrap.io/wp-content/uploads/2021/04/Rails.svg'></Image>
+                    <Image src='https://mailtrap.io/wp-content/uploads/2021/04/Python.svg'></Image>
+                    <Image src='https://mailtrap.io/wp-content/uploads/2021/04/NET.svg'></Image>
+                    <Image src='https://mailtrap.io/wp-content/uploads/2021/04/Symfony.svg'></Image>
+                    <Image src='https://mailtrap.io/wp-content/uploads/2021/04/Laravel.svg'></Image>
+                </HStack>
+                </Center>
+              </Box>
+
+           {/* ---------------------------------- */}
+           <Box width={'70%'} margin="auto" marginTop={'50px'} > 
+            <Heading >From our #BestClientEver </Heading>
+            <Flex justifyContent={'space-around'}>
+
+            <Box marginTop={'30px'} w={'48%'} boxShadow='dark-lg' p='6' rounded='md' bg='white' h="200px" >
+              <Heading size={'md'}>Alessandro Rodi</Heading>
+              <Text>I love @Mailtrap. It removes all the asshole of configuring email servers in test environments. Great service! Is totally worth your money!</Text>
+
+            </Box>
+            <Box marginTop={'30px'}  w={'48%'} boxShadow='dark-lg' p='6' rounded='md' bg='white' >
+              <Heading size={'md'}>DeveloperMitch</Heading>
+              <Text>After all these years of web development, how have I only JUST started using @Mailtrap. I had heard about it, but never got round to using it. An awesome way of testing emails.</Text>
+
+            </Box>
+            </Flex>
+           </Box>
+
+
+
+        {/* ------------------------------- */}
                 <Box  marginTop={'100px'}  h={'300px'}  w={'100%'} bgColor={'#1a2e44'}>
                   <Flex alignItems={'center'} justifyContent='center'>
                   <Box >
